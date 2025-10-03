@@ -13,6 +13,11 @@ export default defineNuxtConfig({
     },
     googleGeminiApiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
   },
+  nitro: {
+    externals: {
+      inline: ['@logto/node']
+    }
+  },
   logto: {
     pathnames: {
       signIn: '/sign-in',
