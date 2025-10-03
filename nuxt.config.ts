@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@unocss/nuxt', '@logto/nuxt'],
+  modules: ['@unocss/nuxt', '@logto/nuxt', '@pinia/nuxt'],
   css: ['~/assets/tailwind.css'],
   runtimeConfig: {
     logto: {

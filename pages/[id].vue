@@ -1,14 +1,24 @@
 <script setup lang="ts">
-import { Chat } from "@ai-sdk/vue";
-import { ref } from "vue";
+import { Chat } from "@ai-sdk/vue"
+import { ref } from "vue"
 
-const query = ref("");
-const chat = new Chat({});
+const query = ref("")
+const chat = new Chat({})
+const route = useRoute()
+const router = useRouter()
 
 const handleSubmit = () => {
-    chat.sendMessage({ text: query.value });
-    query.value = "";
-};
+    chat.sendMessage({ text: query.value })
+    query.value = ""
+}
+
+onMounted(() => {
+  const first = route.query.first as string | undefined
+  if (first) {
+    chat.sendMessage({ text: first })
+    router.replace({ path: `/${route.params.id}` })
+  }
+})
 </script>
 
 <template>

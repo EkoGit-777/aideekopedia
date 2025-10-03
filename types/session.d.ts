@@ -1,5 +1,6 @@
 interface SessionType {
   id: string
-  name: string
-  updatedAt: string
+  title: string
+  userId: string
+  createdAt: string
 }

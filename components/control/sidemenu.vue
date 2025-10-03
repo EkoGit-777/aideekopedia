@@ -1,7 +1,9 @@
 <script setup lang="ts">
-defineProps<{
-  sessions?: SessionType[]
-}>()
+const sessionStore = useSessionStore()
+
+// onMounted(() => {
+//   sessionStore.fetchSessions()
+// })
 </script>
 <template>
   <div class="flex flex-col h-full">
@@ -13,12 +15,12 @@ defineProps<{
         New Chat
       </NuxtLink>
       <NuxtLink
-        v-for="i in 8"
-        :key="i"
-        :to="`/chat/${i}`"
+        v-for="session in sessionStore.sessions"
+        :key="session.id"
+        :to="`/chat/${session.id}`"
         class="block p-3 rounded-lg text-yellow hover:bg-primary-400 border"
       >
-        Chat {{ i }}
+        Chat {{ session.title }}
       </NuxtLink>
     </nav>
     <div class="p-4 border-t">

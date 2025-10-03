@@ -22,10 +22,10 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="flex h-screen">
+  <div class="flex h-screen divide-x divide-yellow">
     <!-- Sidebar (chat list) -->
-    <aside class="hidden md:block w-180 border-r bg-primary border-yellow border-r border-2">
-      <ControlSidemenu :sessions="sessions" />
+    <aside class="hidden md:block w-180 bg-primary">
+      <ControlSidemenu/>
     </aside>
 
     <!-- Mobile sidebar toggle -->
@@ -42,13 +42,13 @@ onMounted(() => {
     <transition name="slide">
       <aside
         v-if="isOpen"
-        class="fixed inset-y-0 left-0 w-full bg-primary border-r z-40"
+        class="fixed inset-y-0 left-0 w-full bg-primary z-40"
       >
         <div class="py-6 pr-4 pl-32 border-b flex justify-between items-center">
           <div class="text20 text-yellow font-bold">Chats</div>
           <button @click="isOpen = false" class="text-yellow bg-transparent">✕</button>
         </div>
-        <ControlSidemenu :sessions="sessions" />
+        <ControlSidemenu/>
       </aside>
     </transition>
 
