@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  defineProps<{
-    sessions?: string
-  }>()
+defineProps<{
+  sessions?: SessionType[]
+}>()
 </script>
 <template>
   <div>
