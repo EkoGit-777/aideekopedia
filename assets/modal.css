@@ -1,0 +1,13 @@
+.modal-title {
+  @apply text-12 md:text-13 lg:text-14 xl:text-15; /* style font */
+  @apply sm:bg-gradient-from-primary-600 sm:bg-gradient-to-primary-400 sm:bg-gradient-to-br sm:px-24 sm:pb-16 sm:text-yellow; /* style desktop */
+  @apply max-h-64 p-16 pb-0 font-bold  text-primary; /* style default */
+}
+
+.modal-content {
+  @apply rounded-4 space-y-16 bg-white p-16 sm:px-24 sm:py-16;
+}
+
+.modal-background {
+  background: #00000044;
+}

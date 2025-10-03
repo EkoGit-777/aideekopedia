@@ -1,0 +1,22 @@
+@import './modal.css';
+@import './text.css';
+
+/* Reset default margins */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  font-size: 4px;
+  @apply text-gray-950;
+}
+body {
+  font-size: 4rem;
+  @apply bg-gray-50;
+}
+
+input, .input-text-index, .input-text-password {
+  box-sizing: border-box;
+}
