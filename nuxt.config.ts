@@ -13,4 +13,14 @@ export default defineNuxtConfig({
     },
     googleGeminiApiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
   },
+  vite: {
+    server: {
+      allowedHosts: [
+        'localhost',
+        '127.0.0.1',
+        'devserver-main--dulcet-mochi-d7b54b.netlify.app',
+        'dulcet-mochi-d7b54b.netlify.app'
+      ]
+    }
+  }
 })
