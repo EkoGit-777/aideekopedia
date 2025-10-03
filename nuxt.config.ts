@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         '127.0.0.1',
         'devserver-main--dulcet-mochi-d7b54b.netlify.app',
         'dulcet-mochi-d7b54b.netlify.app'
-      ]
-    }
+      ],
+    },
   }
 })
