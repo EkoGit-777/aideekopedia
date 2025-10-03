@@ -13,7 +13,7 @@ const handleSubmit = () => {
 
 <template>
   <div class="relative box-border flex-col flex w-full justify-center px-24 md:px-128 h-full space-y-12 items-center">
-    <div class="space-y-8 flex flex-col w-full h-full py-24 overflow-y-auto">
+    <div class="space-y-8 flex-1 flex-col w-full py-24 overflow-y-auto">
       <div
         v-for="(m, index) in chat.messages" :key="m.id ? m.id : index"
         class="w-full text-white flex"
