@@ -1,9 +1,0 @@
-[build]
-  command = "npx prisma generate && npm run build"
-  publish = ".output/public"
-
-# If you want Prisma migrations applied automatically too:
-# command = "npx prisma generate && npx prisma migrate deploy && npm run build"
-
-[functions]
-  node_bundler = "esbuild"
