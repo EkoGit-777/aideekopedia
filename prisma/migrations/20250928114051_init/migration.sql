@@ -11,7 +11,7 @@ CREATE TABLE "public"."User" (
 CREATE TABLE "public"."ChatSession" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
-    "title" TEXT NOT NULL,
+    "title" TEXT NOT NULL,y
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "ChatSession_pkey" PRIMARY KEY ("id")

@@ -13,6 +13,13 @@ export default defineNuxtConfig({
     },
     googleGeminiApiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
   },
+  logto: {
+    pathnames: {
+      signIn: '/sign-in',
+      signOut: '/sign-out',
+      callback: '/callback',
+    },
+  },
   vite: {
     server: {
       allowedHosts: [

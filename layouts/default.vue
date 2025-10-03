@@ -34,8 +34,8 @@ onMounted(() => {
         </NuxtLink>
       </nav>
       <div class="p-4 border-t">
-        <NuxtLink to="/settings" class="block p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
-          Settings
+        <NuxtLink to="/sign-out" class="block p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+          Logout
         </NuxtLink>
       </div>
     </aside>
@@ -73,11 +73,11 @@ onMounted(() => {
         </nav>
         <div class="p-4 border-t">
           <NuxtLink
-            to="/settings"
+            to="/sign-out"
             class="block p-2 text-gray-600 hover:bg-gray-100 rounded-lg"
             @click="isOpen = false"
           >
-            Settings
+            Logout
           </NuxtLink>
         </div>
       </aside>
