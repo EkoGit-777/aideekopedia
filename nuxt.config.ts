@@ -8,6 +8,13 @@ export default defineNuxtConfig({
     '@pinia/nuxt'
   ],
   css: ['~/assets/tailwind.css'],
+  // ... other settings
+  nitro: {
+    // This setting tells Nuxt/Nitro to build the output for Netlify's platform
+    preset: 'netlify',
+  },
+  // Ensure SSR is enabled (it's true by default)
+  ssr: true, 
   runtimeConfig: {
     // logto: {
     //   endpoint: process.env.LOGTO_ENDPOINT,
@@ -17,13 +24,13 @@ export default defineNuxtConfig({
     // },
     googleGeminiApiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
   },
-  logto: {
-    pathnames: {
-      signIn: '/sign-in',
-      signOut: '/sign-out',
-      callback: '/callback',
-    },
-  },
+  // logto: {
+  //   pathnames: {
+  //     signIn: '/sign-in',
+  //     signOut: '/sign-out',
+  //     callback: '/callback',
+  //   },
+  // },
   vite: {
     server: {
       allowedHosts: [
