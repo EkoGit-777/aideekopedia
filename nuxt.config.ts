@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@unocss/nuxt', '@logto/nuxt', '@pinia/nuxt'],
   css: ['~/assets/tailwind.css'],
+  nitro: {
+    preset: 'netlify'
+  },
   runtimeConfig: {
     logto: {
       endpoint: process.env.LOGTO_ENDPOINT,
