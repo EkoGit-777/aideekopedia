@@ -1,0 +1,4 @@
+[build]
+  command = "npx prisma generate && npx prisma migrate deploy && npm run build"
+  publish = ".output/public"
+  functions = ".output/server"
