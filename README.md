@@ -36,4 +36,4 @@ NUXT_LOGTO_ENDPOINT="https://your-logto-domain"
 NUXT_LOGTO_APP_ID="your-logto-app-id"
 
 # AI
-NUXT_AI_API_KEY="your-gemini-api-key"
+GOOGLE_GENERATIVE_AI_API_KEY="your-gemini-api-key"
